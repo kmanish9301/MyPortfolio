@@ -1,10 +1,20 @@
 import { Box, Button, Stack, Typography, useTheme } from "@mui/material";
 import Container from "@mui/material/Container";
 import { useNavigate } from "react-router-dom";
+import Resume from "../assets/Manish-Kharbade-Resume.pdf";
 
 const Home = () => {
     const navigate = useNavigate();
     const theme = useTheme();
+
+    const handleResumeDownload = () => {
+        const link = document.createElement("a");
+        link.href = Resume;
+        link.download = "Manish_Resume.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
 
     return (
         <Container
@@ -102,6 +112,7 @@ const Home = () => {
                             width: { xs: "8rem", md: "12rem" },
                             borderRadius: "0rem",
                         }}
+                        onClick={handleResumeDownload}
                     >
                         Resume
                     </Button>

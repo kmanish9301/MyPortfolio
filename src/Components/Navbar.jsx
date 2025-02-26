@@ -26,7 +26,7 @@ const Navbar = () => {
                     backgroundColor: theme.palette.background.default,
                     color: theme.palette.text.primary,
                     boxShadow: "none",
-                    borderBottom: `1px solid ${theme.palette.shadow.main}`,
+                    borderBottom: `2px solid ${theme.palette.shadow.main}`,
                     px: { xs: 0, md: 15 },
                 }}
             >
