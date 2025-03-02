@@ -21,7 +21,7 @@ const Navbar = () => {
         <>
             {/* App Bar */}
             <AppBar
-                position="static"
+                position="fixed"
                 sx={{
                     backgroundColor: theme.palette.background.default,
                     color: theme.palette.text.primary,

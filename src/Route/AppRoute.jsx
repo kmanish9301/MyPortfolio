@@ -18,7 +18,7 @@ const AppRoute = () => {
         <Suspense fallback={<div>Loading...</div>}>
             <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
                 {/* Main Content */}
-                <div style={{ flex: 1 }}>
+                <div style={{ flex: 1, marginTop: "4rem", marginBottom: "4rem" }}>
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/home" element={<Home />} />
