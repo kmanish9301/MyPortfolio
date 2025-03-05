@@ -1,5 +1,6 @@
 import { Box, Button, Stack, Typography, useTheme } from "@mui/material";
 import Container from "@mui/material/Container";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
 import Resume from "../assets/Manish-Kharbade-Resume.pdf";
 
@@ -20,7 +21,7 @@ const Home = () => {
         <Container
             maxWidth="lg"
             sx={{
-                marginTop: "3rem",
+                marginTop: { xs: "6rem", md: "1.5rem" },
                 px: { xs: 2, md: 0 },
                 color: theme.palette.text.primary,
             }}
@@ -69,10 +70,41 @@ const Home = () => {
                         textAlign: { xs: "center", md: "left" },
                     }}
                 >
-                    🚀 Junior Software Engineer | Frontend Developer <br />
+                    🚀 Software Engineer | Frontend Developer <br />
                     👨‍💻 2 Years Experience | Indian Institute of Hardware & Technology <br />
                     🎯 Passionate about building scalable & interactive web applications
                 </Typography>
+
+                <Stack direction="row" spacing={2} sx={{
+                    marginTop: "2rem", gap: "1rem", fontSize: "2rem", cursor: "pointer"
+                }}>
+                    <Box
+                        component="a"
+                        href="https://www.linkedin.com/in/mkharbade09/"
+                        target="_blank"
+                        sx={{
+                            color: theme.palette.text.secondary,
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                        }}
+                    >
+                        <SiLinkedin />
+                    </Box>
+                    <Box
+                        component="a"
+                        href="https://github.com/kmanish9301"
+                        target="_blank"
+                        sx={{
+                            color: theme.palette.text.secondary,
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                        }}
+                    >
+                        <SiGithub />
+                    </Box>
+                </Stack>
 
                 {/* Buttons */}
                 <Stack direction="row" spacing={2} sx={{ marginTop: "2rem", gap: "2rem" }}>
