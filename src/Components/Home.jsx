@@ -71,7 +71,7 @@ const Home = () => {
                     }}
                 >
                     🚀 Software Engineer | Frontend Developer <br />
-                    👨‍💻 2 Years Experience | Indian Institute of Hardware & Technology <br />
+                    👨‍💻 2.5 Years Experience | Indian Institute of Hardware & Technology <br />
                     🎯 Passionate about building scalable & interactive web applications
                 </Typography>
 
@@ -138,7 +138,7 @@ const Home = () => {
                             textTransform: "none",
                             boxShadow: `0.4rem 0.4rem 0px ${theme.palette.shadow.main}`,
                             "&:hover": {
-                                backgroundColor: theme.palette.background.default,
+                                backgroundColor: theme.palette.background.hover,
                                 boxShadow: `0.4rem 0.4rem 0px ${theme.palette.shadow.main}`,
                             },
                             width: { xs: "8rem", md: "12rem" },

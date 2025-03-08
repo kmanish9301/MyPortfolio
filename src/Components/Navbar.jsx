@@ -1,7 +1,7 @@
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import MenuIcon from "@mui/icons-material/Menu";
-import { AppBar, Box, Drawer, IconButton, List, ListItem, ListItemText, Toolbar, Typography, useTheme } from "@mui/material";
+import { alpha, AppBar, Box, Drawer, IconButton, List, ListItem, ListItemText, Toolbar, Typography, useTheme } from "@mui/material";
 import { useContext, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { navLinkData } from "../Constants/Constants";
@@ -23,9 +23,11 @@ const Navbar = () => {
             <AppBar
                 position="fixed"
                 sx={{
-                    backgroundColor: theme.palette.background.default,
+                    backgroundColor: alpha(theme.palette.background.default, 0.2),
+                    backdropFilter: "blur(2rem)",
+                    WebkitBackdropFilter: "blur(2rem)",
                     color: theme.palette.text.primary,
-                    boxShadow: "none",
+                    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
                     borderBottom: `2px solid ${theme.palette.shadow.main}`,
                     px: { xs: 0, md: 15 },
                 }}

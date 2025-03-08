@@ -12,6 +12,7 @@ const lightTheme = createTheme({
         background: {
             default: "#ffffff",
             paper: "#f5f5f5",
+            hover: "#c5c5c5",
         },
         text: {
             primary: "#000000",
