@@ -25,7 +25,7 @@ const About = () => {
 
                 <Typography sx={{ color: theme.palette.text.primary, fontWeight: "600", fontSize: { xs: "1.5rem", md: "2.5rem" }, letterSpacing: "0.1rem", wordSpacing: "0.25rem", marginTop: "1rem" }}>
                     I'm Software Engineer - Frontend  Engineering,
-                    <br /> Techademy Lerning Solutions PVT. LTD.
+                    <br /> Techademy Learning Solutions PVT. LTD.
                 </Typography>
 
                 <Typography sx={{ color: theme.palette.text.primary, fontWeight: "600", fontSize: "1rem", letterSpacing: "0.1rem", marginTop: "2rem" }}>
