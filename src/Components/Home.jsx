@@ -2,6 +2,7 @@ import { Box, Button, Stack, Typography, useTheme } from "@mui/material";
 import Container from "@mui/material/Container";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
+import { Typewriter } from "react-simple-typewriter";
 import Resume from "../assets/Manish-Kharbade-Resume.pdf";
 
 const Home = () => {
@@ -15,7 +16,15 @@ const Home = () => {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-    }
+    };
+
+    const textTypeAnimationList = [
+        "Frontend Engineering | Frontend Development",
+        "Full Stack Developer | Expertise in Node.js",
+        "Redux | MongoDB | JavaScript | GIT | GitHub",
+        "Material UI | SCSS | Agile Methodology | UI Development",
+        "Restful Web API Development...!"
+    ];
 
     return (
         <Container
@@ -57,20 +66,15 @@ const Home = () => {
                     Crafting Modern Frontend Experiences
                 </Typography>
 
-                {/* Description */}
-                <Typography
-                    sx={{
-                        color: theme.palette.text.secondary,
-                        marginTop: "1rem",
-                        maxWidth: "600px",
-                        paddingX: { xs: "0.5rem" },
-                        lineHeight: { xs: "2rem" },
-                        wordSpacing: "0.3rem",
-                        letterSpacing: "0.1rem",
-                        textAlign: { xs: "center", md: "left" },
-                    }}
-                >
-                    🚀 Software Engineer | Frontend Developer <br />
+                <Typography sx={{ color: "text.secondary", marginTop: "1rem", maxWidth: "600px", paddingX: { xs: "0.5rem" }, lineHeight: { xs: "2rem" }, wordSpacing: "0.3rem", letterSpacing: "0.1rem", textAlign: { xs: "center", md: "left" } }}>
+                    🚀 <Typewriter
+                        words={textTypeAnimationList}
+                        loop={0} // 0 means infinite loop
+                        typeSpeed={40}
+                        deleteSpeed={40}
+                        delaySpeed={1000}
+                        cursor
+                    /> <br />
                     👨‍💻 2.5 Years Experience | Indian Institute of Hardware & Technology <br />
                     🎯 Passionate about building scalable & interactive web applications
                 </Typography>
