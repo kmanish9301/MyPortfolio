@@ -1,23 +1,23 @@
-import { Stack, useTheme, Typography, Box } from "@mui/material";
+import { Container, Stack, Typography, useTheme } from "@mui/material";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
     const theme = useTheme();
+    const date = new Date();
+    const dynamicYear = date.getFullYear();
     return (
-        <Box
-            component="footer"
+        <Container
+            maxWidth="lg"
             sx={{
-                width: "100vw",
-                marginTop: "auto",
+                px: { xs: 5, md: 0 },
                 color: theme.palette.text.primary,
-                backgroundColor: theme.palette.background.paper,
-                py: { xs: 2, md: 4 },
-                textAlign: "center",
-                borderTop: `1px solid ${theme.palette.divider}`,
-                minHeight: "50px",
+                overflow: "hidden",
                 display: "flex",
+                alignItems: "center",
                 justifyContent: "center",
-                alignItems: "center"
+                flexDirection: "column",
+                paddingBottom: "1rem"
             }}
         >
             <Stack
@@ -26,41 +26,43 @@ const Footer = () => {
                 alignItems="center"
                 sx={{ width: "100%", maxWidth: "1200px" }}
             >
-                <Typography sx={{ fontWeight: "400", fontSize: "0.8rem" }}>
-                    © 2025 All rights reserved.
+                <Typography sx={{ fontWeight: "400", fontSize: "0.9rem" }}>
+                    © {dynamicYear} All rights reserved.
                 </Typography>
-                <Box sx={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-                    <Typography
-                        component={Link}
-                        to={'https://github.com/kmanish9301'}
+                <Stack direction="row" spacing={2} sx={{
+                    gap: "1rem", fontSize: "1rem", cursor: "pointer"
+                }}>
+                    <Link
+                        to="https://www.linkedin.com/in/mkharbade09/"
                         target="_blank"
-                        sx={{
-                            color: theme.palette.text.primary,
-                            fontWeight: "400",
-                            letterSpacing: "0.2rem",
-                            fontSize: "0.8rem",
-                            "&:hover": { color: "text.primary" }
+                        style={{
+                            color: theme.palette.text.secondary,
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            textDecoration: "none",
+                            fontSize: "1.2rem"
                         }}
                     >
-                        Github
-                    </Typography>
-                    <Typography
-                        component={Link}
-                        to={"https://www.linkedin.com/in/mkharbade09/"}
+                        <SiLinkedin />
+                    </Link>
+                    <Link
+                        to="https://github.com/kmanish9301"
                         target="_blank"
-                        sx={{
-                            color: theme.palette.text.primary,
-                            fontWeight: "400",
-                            letterSpacing: "0.2rem",
-                            fontSize: "0.8rem",
-                            "&:hover": { color: "text.primary" }
+                        style={{
+                            color: theme.palette.text.secondary,
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            textDecoration: "none",
+                            fontSize: "1.2rem"
                         }}
                     >
-                        LinkedIn
-                    </Typography>
-                </Box>
+                        <SiGithub />
+                    </Link>
+                </Stack>
             </Stack>
-        </Box>
+        </Container>
     );
 };
 

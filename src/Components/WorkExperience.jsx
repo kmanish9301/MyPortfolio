@@ -6,7 +6,7 @@ const WorkExperience = () => {
         <Container
             maxWidth="lg"
             sx={{
-                px: { xs: 2, md: 0 },
+                px: { xs: 1, md: 0 },
                 color: theme.palette.text.primary,
                 overflow: "hidden",
             }}

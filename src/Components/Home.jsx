@@ -36,7 +36,6 @@ const Home = () => {
             }}
         >
             <Stack sx={{ display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
-                {/* Name Box */}
                 <Box
                     sx={{
                         display: "inline-block",
@@ -53,7 +52,6 @@ const Home = () => {
                     </Typography>
                 </Box>
 
-                {/* Heading */}
                 <Typography
                     sx={{
                         fontWeight: "bold",
@@ -66,7 +64,7 @@ const Home = () => {
                     Crafting Modern Frontend Experiences
                 </Typography>
 
-                <Typography sx={{ color: "text.secondary", marginTop: "1rem", maxWidth: "600px", paddingX: { xs: "0.5rem" }, lineHeight: { xs: "2rem" }, wordSpacing: "0.3rem", letterSpacing: "0.1rem", textAlign: { xs: "center", md: "left" } }}>
+                <Typography sx={{ color: theme.palette.text.primary, marginTop: "1rem", maxWidth: "600px", paddingX: { xs: "0.5rem" }, lineHeight: { xs: "2rem" }, wordSpacing: "0.3rem", letterSpacing: "0.1rem", textAlign: "left" }}>
                     🚀 <Typewriter
                         words={textTypeAnimationList}
                         loop={0} // 0 means infinite loop
@@ -110,7 +108,6 @@ const Home = () => {
                     </Box>
                 </Stack>
 
-                {/* Buttons */}
                 <Stack direction="row" spacing={2} sx={{ marginTop: "2rem", gap: "2rem" }}>
                     <Button
                         variant="contained"

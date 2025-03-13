@@ -1,4 +1,4 @@
-import { Container, Grid2, useTheme, Typography } from "@mui/material";
+import { Container, Grid2, Typography, useTheme } from "@mui/material";
 import { projectData } from "../Constants/Constants";
 import ProjectCard from "./ProjectCard";
 

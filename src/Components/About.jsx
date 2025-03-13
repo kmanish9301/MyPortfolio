@@ -14,7 +14,7 @@ const About = () => {
             <Container
                 maxWidth="lg"
                 sx={{
-                    px: { xs: 2, md: 0 },
+                    px: { xs: 5, md: 0 },
                     color: theme.palette.text.primary,
                     overflow: "hidden",
                 }}
@@ -28,7 +28,7 @@ const About = () => {
                     <br /> Techademy Learning Solutions PVT. LTD.
                 </Typography>
 
-                <Typography sx={{ color: theme.palette.text.primary, fontWeight: "600", fontSize: "1rem", letterSpacing: "0.1rem", marginTop: "2rem" }}>
+                <Typography sx={{ color: theme.palette.text.primary, fontWeight: "600", fontSize: "1rem", letterSpacing: "0.1rem", marginTop: "2rem", textAlign: "justify", textJustify: "inter-word", wordBreak: "break-word", hyphens: "auto" }}>
                     I am a Full Stack Developer passionate about building scalable web applications and continuously learning new technologies. I possess strong skills in integrating front-end and back-end solutions to create efficient, secure, and user-friendly experiences. With a focus on collaboration and optimization, I am committed to enhancing system performance and user engagement in my projects.
                 </Typography>
 
@@ -45,7 +45,7 @@ const About = () => {
                     Course Completed
                 </Typography>
 
-                <Stack>
+                <Stack sx={{ px: { xs: 2, md: 0 } }}>
                     <Box sx={{ display: "flex", alignItems: "center", gap: "0.5rem", marginTop: "1rem" }}>
                         <Typography sx={{ color: "text.primary", fontWeight: "600", fontSize: "1rem", letterSpacing: "0.1rem" }}>
                             Advance Java Full Stack Development from Edubridge India Pvt. Ltd.
