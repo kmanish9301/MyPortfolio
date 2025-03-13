@@ -1,0 +1,15 @@
+# Exported from Render on 2025-03-13T10:34:22Z
+services:
+  - type: web
+    name: MK-Portfolio
+    runtime: static
+    repo: https://github.com/kmanish9301/MyPortfolio
+    buildCommand:
+      rm -rf node_modules package-lock.json && npm cache clean --force &&
+      npm install && npm run build
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+version: "1"
