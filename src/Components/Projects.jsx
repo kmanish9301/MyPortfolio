@@ -15,7 +15,8 @@ const Projects = () => {
                 alignItems: "center",
                 justifyContent: "center",
                 flexDirection: "column",
-                paddingBottom: "1rem"
+                paddingBottom: "1rem",
+                marginBottom: "4rem"
             }}
         >
             <Typography sx={{ color: theme.palette.text.primary, fontWeight: "600", fontSize: "2.5rem", letterSpacing: "0.1rem", wordSpacing: "0.25rem", marginTop: "1rem" }}>

@@ -17,6 +17,7 @@ const About = () => {
                     px: { xs: 5, md: 0 },
                     color: theme.palette.text.primary,
                     overflow: "hidden",
+                    marginBottom: "4rem"
                 }}
             >
                 <Typography sx={{ color: theme.palette.text.primary, fontWeight: "600", fontSize: "1.5rem", letterSpacing: "0.1rem", wordSpacing: "0.25rem", marginTop: "3rem" }}>
