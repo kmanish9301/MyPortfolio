@@ -33,7 +33,9 @@ const ProjectCard = ({ project }) => {
             )}
 
             <CardContent sx={{ padding: "0", paddingBottom: "0 !important" }}>
-                <Typography sx={{ color: theme.palette.text.primary, fontWeight: "600", fontSize: "1.2rem", letterSpacing: "0.1rem", wordSpacing: "0.25rem", marginTop: "1rem" }}>
+                <Typography sx={{
+                    color: theme.palette.text.primary, fontWeight: "600", fontSize: "1.2rem", letterSpacing: "0.1rem", wordSpacing: "0.25rem", marginTop: "1rem", fontFamily: "inherit"
+                }}>
                     {project?.name}
                 </Typography>
 
@@ -45,7 +47,9 @@ const ProjectCard = ({ project }) => {
                     flexWrap: "wrap",
                     gap: "0.5rem"
                 }}>
-                    <Typography sx={{ color: theme.palette.text.primary, fontWeight: "600", fontSize: "0.8rem", letterSpacing: "0.1rem", marginTop: "1rem" }}>
+                    <Typography sx={{
+                        color: theme.palette.text.primary, fontWeight: "600", fontSize: "0.8rem", letterSpacing: "0.1rem", marginTop: "1rem", fontFamily: "inherit"
+                    }}>
                         Tech Used :
                     </Typography>
 
@@ -92,6 +96,7 @@ const ProjectCard = ({ project }) => {
                                                     fontSize: "0.85rem",
                                                     fontWeight: "bold",
                                                     padding: 0,
+                                                    fontFamily: "inherit"
                                                 }}
                                             >
                                                 ... View More
@@ -108,6 +113,7 @@ const ProjectCard = ({ project }) => {
                                     textTransform: "none",
                                     color: theme.palette.greenButtonBackground.main,
                                     fontSize: "0.85rem",
+                                    fontFamily: "inherit"
                                 }}
                             >
                                 View Less
@@ -134,6 +140,7 @@ const ProjectCard = ({ project }) => {
                                         backgroundColor: theme.palette.greenButtonBackground.hover,
                                         boxShadow: `0.4rem 0.4rem 0px ${theme.palette.shadow.main}`,
                                     },
+                                    fontFamily: "inherit"
                                 }}
                             >
                                 GitHub
@@ -154,6 +161,7 @@ const ProjectCard = ({ project }) => {
                                         backgroundColor: theme.palette.background.hover,
                                         boxShadow: `0.4rem 0.4rem 0px ${theme.palette.shadow.main}`,
                                     },
+                                    fontFamily: "inherit"
                                 }}
                             >
                                 Demo

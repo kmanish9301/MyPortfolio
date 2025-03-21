@@ -72,7 +72,9 @@ const Skills = () => {
         >
             {skillItems.map((skill, index) => (
                 <div key={index} style={{ marginBottom: "1.5rem" }}>
-                    <Typography style={{ color: theme.palette.primary.main, fontSize: "1.5rem" }}>
+                    <Typography style={{
+                        color: theme.palette.primary.main, fontSize: "1.5rem", fontFamily: "inherit"
+                    }}>
                         {skill.category}
                     </Typography>
                     <Marquee
@@ -104,7 +106,9 @@ const Skills = () => {
                                     height: "100%",
                                 }}
                             >
-                                <Box sx={{ display: "flex", alignItems: "center", justifyItems: "center", flexDirection: "column" }}>
+                                <Box sx={{
+                                    display: "flex", alignItems: "center", justifyItems: "center", flexDirection: "column", fontFamily: "inherit"
+                                }}>
                                     <span style={{ color: item.color, fontSize: "2rem" }}>
                                         {item.icon}
                                     </span>

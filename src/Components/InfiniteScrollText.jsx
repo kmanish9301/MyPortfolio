@@ -19,11 +19,11 @@ const InfiniteScrollText = () => {
                     borderBottom: `2px solid ${theme.palette.shadow?.main || "#ccc"}`
                 }}
             >
-                <Box sx={{ display: "flex", gap: "2rem" }}>
-                    <Typography sx={{ color: theme.palette.text.primary, fontWeight: "400", fontSize: "0.8rem", letterSpacing: "0.1rem", wordSpacing: "0.25rem" }}>
+                <Box sx={{ display: "flex", gap: "1rem" }}>
+                    <Typography sx={{ color: theme.palette.text.primary, fontWeight: "400", fontSize: "0.8rem", letterSpacing: "0.1rem", wordSpacing: "0.25rem", fontFamily: "inherit" }}>
                         Hello, I'm Manish.
                     </Typography>
-                    <Typography sx={{ color: theme.palette.text.primary, fontWeight: "400", fontSize: "0.8rem", letterSpacing: "0.1rem", wordSpacing: "0.25rem" }}>
+                    <Typography sx={{ color: theme.palette.text.primary, fontWeight: "400", fontSize: "0.8rem", letterSpacing: "0.1rem", wordSpacing: "0.25rem", fontFamily: "inherit" }}>
                         I am a dedicated Software Engineer with 2.2 years of experience specializing
                         in frontend development. I am skilled in creating responsive,
                         user-friendly web applications.

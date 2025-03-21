@@ -11,25 +11,37 @@ const WorkExperience = () => {
                 overflow: "hidden",
             }}
         >
-            <Typography sx={{ color: theme.palette.text.primary, fontWeight: "600", fontSize: "1.5rem", letterSpacing: "0.1rem", wordSpacing: "0.25rem", marginTop: "3rem" }}>
+            <Typography sx={{
+                color: theme.palette.text.primary, fontWeight: "600", fontSize: "1.5rem", letterSpacing: "0.1rem", wordSpacing: "0.25rem", marginTop: "3rem", fontFamily: "inherit"
+            }}>
                 My Work Experience
             </Typography>
 
             <Box sx={{ marginTop: "2rem" }}>
-                <Typography sx={{ color: theme.palette.text.primary, fontWeight: "600", fontSize: "1.5rem", letterSpacing: "0.1rem", marginTop: "0.5rem" }}>
+                <Typography sx={{
+                    color: theme.palette.text.primary, fontWeight: "600", fontSize: "1.5rem", letterSpacing: "0.1rem", marginTop: "0.5rem", fontFamily: "inherit"
+                }}>
                     Software Engineer - Frontend Engineering | January 2023 - Present
                 </Typography>
-                <Typography sx={{ color: theme.palette.text.primary, fontWeight: "600", fontSize: "1.2rem", letterSpacing: "0.1rem", marginTop: "0.5rem" }}>
+                <Typography sx={{
+                    color: theme.palette.text.primary, fontWeight: "600", fontSize: "1.2rem", letterSpacing: "0.1rem", marginTop: "0.5rem", fontFamily: "inherit"
+                }}>
                     TECHADEMY LEARNING SOLUTIONS (P) LTD | Pune, India
                 </Typography>
-                <Typography sx={{ color: theme.palette.text.primary, fontWeight: "600", fontSize: "1rem", letterSpacing: "0.1rem", marginTop: "0.5rem" }}>
+                <Typography sx={{
+                    color: theme.palette.text.primary, fontWeight: "600", fontSize: "1rem", letterSpacing: "0.1rem", marginTop: "0.5rem", fontFamily: "inherit"
+                }}>
                     Working at Techademy Learning Solutions, a product based leading ed-tech company specializing in workforce upskilling and corporate training.
                 </Typography>
-                <Typography sx={{ color: theme.palette.text.primary, fontWeight: "600", fontSize: "1.5rem", letterSpacing: "0.1rem", marginTop: "2rem" }}>
+                <Typography sx={{
+                    color: theme.palette.text.primary, fontWeight: "600", fontSize: "1.5rem", letterSpacing: "0.1rem", marginTop: "2rem", fontFamily: "inherit"
+                }}>
                     My role involves:
                 </Typography>
 
-                <List sx={{ listStyleType: 'disc', paddingLeft: "1.5rem", fontWeight: "600", fontSize: "1rem", letterSpacing: "0.1rem" }}>
+                <List sx={{
+                    listStyleType: 'disc', paddingLeft: "1.5rem", fontWeight: "600", fontSize: "1rem", letterSpacing: "0.1rem", fontFamily: "inherit"
+                }}>
                     <ListItem sx={{ display: 'list-item' }}>Developing and optimizing scalable UI components while integrating APIs to enhance system efficiency.</ListItem>
                     <ListItem sx={{ display: 'list-item' }}>Redesigning user interfaces to improve user experience and increase engagement.</ListItem>
                     <ListItem sx={{ display: 'list-item' }}>Implementing React performance optimizations, such as code splitting and lazy loading, to reduce load times.</ListItem>

@@ -46,6 +46,7 @@ const Experience = () => {
                     letterSpacing: "0.1rem",
                     wordSpacing: "0.25rem",
                     marginTop: "3rem",
+                    fontFamily: "inherit"
                 }}
             >
                 My Education
@@ -56,18 +57,18 @@ const Experience = () => {
                     {educationSteps.map((step, index) => (
                         <Step key={index} active>
                             <StepLabel StepIconComponent={() => <CustomStepIcon icon={index + 1} />}>
-                                <Typography sx={{ fontWeight: "600", fontSize: "1.2rem" }}>
+                                <Typography sx={{ fontWeight: "600", fontSize: "1.2rem", fontFamily: "Oxanium" }}>
                                     {step.label}
                                 </Typography>
-                                <Typography variant="body2" sx={{ fontStyle: "italic", color: theme.palette.text.secondary }}>
+                                <Typography variant="body2" sx={{ fontStyle: "italic", color: theme.palette.text.secondary, fontFamily: "inherit" }}>
                                     {step.subLabel}
                                 </Typography>
                             </StepLabel>
                             <StepContent>
-                                <Typography variant="body1" sx={{ color: theme.palette.text.primary }}>
+                                <Typography variant="body1" sx={{ color: theme.palette.text.primary, fontFamily: "inherit" }}>
                                     {step.institution}
                                 </Typography>
-                                <Typography variant="body2" sx={{ marginTop: "0.5rem", color: theme.palette.text.secondary }}>
+                                <Typography variant="body2" sx={{ marginTop: "0.5rem", color: theme.palette.text.secondary, fontFamily: "inherit" }}>
                                     {step.description}
                                 </Typography>
                             </StepContent>

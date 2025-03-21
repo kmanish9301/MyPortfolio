@@ -19,10 +19,14 @@ const Projects = () => {
                 marginBottom: "4rem"
             }}
         >
-            <Typography sx={{ color: theme.palette.text.primary, fontWeight: "600", fontSize: "2.5rem", letterSpacing: "0.1rem", wordSpacing: "0.25rem", marginTop: "1rem" }}>
+            <Typography sx={{
+                color: theme.palette.text.primary, fontWeight: "600", fontSize: "2.5rem", letterSpacing: "0.1rem", wordSpacing: "0.25rem", marginTop: "1rem", fontFamily: "inherit"
+            }}>
                 Recent Projects
             </Typography>
-            <Typography sx={{ color: theme.palette.text.primary, fontWeight: "500", fontSize: "1rem", letterSpacing: "0.1rem", marginTop: "1rem", marginBottom: "1rem" }}>
+            <Typography sx={{
+                color: theme.palette.text.primary, fontWeight: "500", fontSize: "1rem", letterSpacing: "0.1rem", marginTop: "1rem", marginBottom: "1rem", fontFamily: "inherit"
+            }}>
                 Check out some of the projects I recently worked on.
             </Typography>
             <Grid2 container spacing={3} sx={{ gap: "3rem" }}>

@@ -65,6 +65,7 @@ const Navbar = () => {
                                 textUnderlineOffset: "0.3rem",
                                 letterSpacing: "0.2rem",
                                 lineHeight: "1rem",
+                                fontFamily: "inherit"
                             }}
                         >
                             Manish.
@@ -96,6 +97,7 @@ const Navbar = () => {
                                             fontSize: "0.75rem",
                                             fontWeight: "600",
                                             "&:hover": { textDecoration: "underline" },
+                                            fontFamily: "inherit"
                                         }}
                                     >
                                         {item.title}
@@ -140,6 +142,7 @@ const Navbar = () => {
                                         textUnderlineOffset: "0.3rem",
                                         "&:hover": { textDecoration: "underline" },
                                         fontSize: "0.8rem !important",
+                                        fontFamily: "inherit"
                                     }}
                                 />
                             </ListItem>

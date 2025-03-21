@@ -47,7 +47,9 @@ const Home = () => {
                         marginBottom: "1rem",
                     }}
                 >
-                    <Typography sx={{ color: theme.palette.text.primary, fontWeight: "bold" }}>
+                    <Typography sx={{
+                        color: theme.palette.text.primary, fontWeight: "bold", fontFamily: "inherit"
+                    }}>
                         Manish Kharbade
                     </Typography>
                 </Box>
@@ -59,12 +61,15 @@ const Home = () => {
                         marginTop: "1rem",
                         color: theme.palette.text.primary,
                         textAlign: "center",
+                        fontFamily: "inherit"
                     }}
                 >
                     Crafting Modern Frontend Experiences
                 </Typography>
 
-                <Typography sx={{ color: theme.palette.text.primary, marginTop: "1rem", maxWidth: "600px", paddingX: { xs: "0.5rem" }, lineHeight: { xs: "2rem" }, wordSpacing: "0.3rem", letterSpacing: "0.1rem", textAlign: "left" }}>
+                <Typography sx={{
+                    color: theme.palette.text.primary, marginTop: "1rem", maxWidth: "600px", paddingX: { xs: "0.5rem" }, lineHeight: { xs: "2rem" }, wordSpacing: "0.3rem", letterSpacing: "0.1rem", textAlign: "left", fontFamily: "inherit"
+                }}>
                     🚀 <Typewriter
                         words={textTypeAnimationList}
                         loop={0} // 0 means infinite loop
@@ -124,6 +129,7 @@ const Home = () => {
                             },
                             width: { xs: "8rem", md: "12rem" },
                             borderRadius: "0rem",
+                            fontFamily: "inherit"
                         }}
                         onClick={() => navigate("/about")}
                     >
@@ -144,6 +150,7 @@ const Home = () => {
                             },
                             width: { xs: "8rem", md: "12rem" },
                             borderRadius: "0rem",
+                            fontFamily: "inherit"
                         }}
                         onClick={handleResumeDownload}
                     >
