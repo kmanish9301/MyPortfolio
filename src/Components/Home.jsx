@@ -12,7 +12,7 @@ const Home = () => {
     const handleResumeDownload = () => {
         const link = document.createElement("a");
         link.href = Resume;
-        link.download = "Manish_Resume.pdf";
+        link.download = "Manish_Kharbade_Resume.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -78,7 +78,7 @@ const Home = () => {
                         delaySpeed={1000}
                         cursor
                     /> <br />
-                    👨‍💻 2.5 Years Experience | Indian Institute of Hardware & Technology <br />
+                    👨‍💻 2.9 Years Experience | Indian Institute of Hardware & Technology <br />
                     🎯 Passionate about building scalable & interactive web applications
                 </Typography>
 
