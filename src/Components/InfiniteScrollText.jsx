@@ -1,5 +1,6 @@
 import { Box, Typography, useTheme } from "@mui/material";
 import Marquee from "react-fast-marquee";
+import { getExperience } from "../Utils/timeUtils";
 
 const InfiniteScrollText = () => {
     const theme = useTheme();
@@ -24,7 +25,7 @@ const InfiniteScrollText = () => {
                         Hello, I'm Manish.
                     </Typography>
                     <Typography sx={{ color: theme.palette.text.primary, fontWeight: "400", fontSize: "0.8rem", letterSpacing: "0.1rem", wordSpacing: "0.25rem", fontFamily: "inherit" }}>
-                        I am a dedicated Software Engineer with 2.2 years of experience specializing
+                        I am a dedicated Software Engineer with {getExperience("2023-01-19")} years of experience specializing
                         in frontend development. I am skilled in creating responsive,
                         user-friendly web applications.
                     </Typography>

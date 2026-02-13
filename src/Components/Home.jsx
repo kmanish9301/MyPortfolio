@@ -4,6 +4,7 @@ import { SiGithub, SiLinkedin } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 import Resume from "../assets/Manish-Kharbade-Resume.pdf";
+import { getExperience } from "../Utils/timeUtils";
 
 const Home = () => {
     const navigate = useNavigate();
@@ -78,7 +79,7 @@ const Home = () => {
                         delaySpeed={1000}
                         cursor
                     /> <br />
-                    👨‍💻 2.9 Years Experience | Indian Institute of Hardware & Technology <br />
+                    👨‍💻 {getExperience("2023-01-19")} Years Experience | Indian Institute of Hardware & Technology <br />
                     🎯 Passionate about building scalable & interactive web applications
                 </Typography>
 
