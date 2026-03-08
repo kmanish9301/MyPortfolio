@@ -1,7 +1,8 @@
+import ECommerce from "../assets/e-commerce.png";
 import MML from "../assets/MakeMyLabs.png";
+import Portfolio from "../assets/Portfolio.png";
 import Techademy from "../assets/TechademyCampus.png";
 import VelocitySector from "../assets/VelocitySector.png";
-import Portfolio from "../assets/Portfolio.png";
 import { getExperience } from "../Utils/timeUtils";
 
 export const navLinkData = [
@@ -145,5 +146,75 @@ export const projectData = [
     ],
     demo: "https://mk-portfolio-6dh2.onrender.com/",
     github: "https://github.com/kmanish9301/MyPortfolio",
+  },
+  {
+    name: "E-Commerce Platform",
+    description: [
+      {
+        id: 1,
+        text: "Developed a scalable full-stack e-commerce application, implementing RESTful APIs for product management, user registration, and secure JWT-based authentication.",
+      },
+      {
+        id: 2,
+        text: "Customized a multi-theme UI system supporting 5 dynamic modes (Light, Dark, OLED, etc.) using native CSS variables and React Context, enhancing accessibility and visual customization.",
+      },
+      {
+        id: 3,
+        text: "Designed a responsive dashboard layout with a collapsible sidebar and interactive header, improving navigation and user engagement across devices",
+      },
+      {
+        id: 4,
+        text: "Optimized data modeling and relational queries using PostgreSQL and Sequelize ORM to efficiently manage user profiles, products, and shopping interactions.",
+      },
+      {
+        id: 5,
+        text: (
+          <span>
+            🚀 Test drive the platform! Log in with Username:{" "}
+            <code
+              style={{
+                backgroundColor: "rgba(128, 128, 128, 0.2)",
+                padding: "2px 6px",
+                borderRadius: "4px",
+                fontWeight: "bold",
+              }}
+            >
+              manishkharbade@gmail.com
+            </code>{" "}
+            and Password:{" "}
+            <code
+              style={{
+                backgroundColor: "rgba(128, 128, 128, 0.2)",
+                padding: "2px 6px",
+                borderRadius: "4px",
+                fontWeight: "bold",
+              }}
+            >
+              manish
+            </code>{" "}
+            to explore the live demo.
+          </span>
+        ),
+      },
+    ],
+    image: ECommerce,
+    tech: [
+      "React.js",
+      "JavaScript(ES6+)",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Sequelize (ORM)",
+      "Tailwind CSS",
+      "JSON Web Tokens (JWT)",
+      "React Context API",
+      "Material UI",
+      "Git",
+      "Github",
+      "VS Code IDE",
+      "Render (Deployment)",
+    ],
+    demo: "https://e-commerse-client.onrender.com/login",
+    github: "https://github.com/kmanish9301/E-Commerse",
   },
 ];
