@@ -46,37 +46,138 @@ const About = () => {
                 <Typography sx={{
                     color: theme.palette.text.primary, fontWeight: "600", fontSize: "1.5rem", letterSpacing: "0.1rem", wordSpacing: "0.25rem", marginTop: "3rem", fontFamily: "inherit"
                 }}>
-                    Course Completed
+                    Certifications
                 </Typography>
 
-                <Stack sx={{ px: { xs: 2, md: 0 } }}>
-                    <Box sx={{ display: "flex", alignItems: "center", gap: "0.5rem", marginTop: "1rem" }}>
-                        <Typography sx={{
-                            color: "text.primary", fontWeight: "600", fontSize: "1rem", letterSpacing: "0.1rem", fontFamily: "inherit"
-                        }}>
-                            Advance Java Full Stack Development from Edubridge India Pvt. Ltd.
-                        </Typography>
-                        <Box
-                            component="a"
-                            href={certificateUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            sx={{
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                color: theme.palette.primary.main,
-                                textDecoration: "none",
-                                verticalAlign: "middle",
-                            }}
-                        >
-                            <FaPaperclip style={{ fontSize: "1rem", cursor: "pointer", marginBottom: "-2px" }} />
+                <Stack sx={{ px: { xs: 2, md: 0 }, gap: "1.5rem", marginTop: "1rem" }}>
+                    <Box>
+                        <Box sx={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                            <Typography sx={{
+                                color: "text.primary", fontWeight: "600", fontSize: "1.1rem", letterSpacing: "0.1rem", fontFamily: "inherit"
+                            }}>
+                                React Essential Training — LinkedIn Learning
+                            </Typography>
+                            <Box
+                                component="a"
+                                href="https://www.linkedin.com/learning/certificates/488dea8e9630fcf8b0065765a337c8926969213214833b4786c4e91b5ecc48f4"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                sx={{
+                                    display: "flex", alignItems: "center", justifyContent: "center",
+                                    color: theme.palette.primary.main, textDecoration: "none", verticalAlign: "middle",
+                                }}
+                            >
+                                <FaPaperclip style={{ fontSize: "1rem", cursor: "pointer", marginBottom: "-2px" }} />
+                            </Box>
                         </Box>
+                        <Typography sx={{ color: "text.secondary", fontWeight: "500", fontSize: "0.9rem", letterSpacing: "0.1rem", marginTop: "0.25rem", fontFamily: "inherit" }}>
+                            Valid from Mar '26
+                        </Typography>
                     </Box>
+
+                    <Box>
+                        <Box sx={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                            <Typography sx={{
+                                color: "text.primary", fontWeight: "600", fontSize: "1.1rem", letterSpacing: "0.1rem", fontFamily: "inherit"
+                            }}>
+                                Node.js Essential Training — LinkedIn Learning
+                            </Typography>
+                            <Box
+                                component="a"
+                                href="https://www.linkedin.com/learning/certificates/c9743b67886af8e264b9b0609519d35f816e925d4abda2712d6a66c292803a0a?trk=share_certificate"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                sx={{
+                                    display: "flex", alignItems: "center", justifyContent: "center",
+                                    color: theme.palette.primary.main, textDecoration: "none", verticalAlign: "middle",
+                                }}
+                            >
+                                <FaPaperclip style={{ fontSize: "1rem", cursor: "pointer", marginBottom: "-2px" }} />
+                            </Box>
+                        </Box>
+                        <Typography sx={{ color: "text.secondary", fontWeight: "500", fontSize: "0.9rem", letterSpacing: "0.1rem", marginTop: "0.25rem", fontFamily: "inherit" }}>
+                            Valid from Apr '26
+                        </Typography>
+                    </Box>
+
+                    <Box>
+                        <Box sx={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                            <Typography sx={{
+                                color: "text.primary", fontWeight: "600", fontSize: "1.1rem", letterSpacing: "0.1rem", fontFamily: "inherit"
+                            }}>
+                                React: Testing and Debugging — LinkedIn Learning
+                            </Typography>
+                            <Box
+                                component="a"
+                                href="https://www.linkedin.com/learning/certificates/6de0f13fd5e36cd81dcc6b992c84cd8d5d1b90dfad3d50f1a65b7211ee5a429d?trk=share_certificate"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                sx={{
+                                    display: "flex", alignItems: "center", justifyContent: "center",
+                                    color: theme.palette.primary.main, textDecoration: "none", verticalAlign: "middle",
+                                }}
+                            >
+                                <FaPaperclip style={{ fontSize: "1rem", cursor: "pointer", marginBottom: "-2px" }} />
+                            </Box>
+                        </Box>
+                        <Typography sx={{ color: "text.secondary", fontWeight: "500", fontSize: "0.9rem", letterSpacing: "0.1rem", marginTop: "0.25rem", fontFamily: "inherit" }}>
+                            Valid from Mar '26
+                        </Typography>
+                    </Box>
+
+                    <Box>
+                        <Box sx={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                            <Typography sx={{
+                                color: "text.primary", fontWeight: "600", fontSize: "1.1rem", letterSpacing: "0.1rem", fontFamily: "inherit"
+                            }}>
+                                Advance Java Full Stack Development from Edubridge India Pvt. Ltd.
+                            </Typography>
+                            <Box
+                                component="a"
+                                href={certificateUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                sx={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    color: theme.palette.primary.main,
+                                    textDecoration: "none",
+                                    verticalAlign: "middle",
+                                }}
+                            >
+                                <FaPaperclip style={{ fontSize: "1rem", cursor: "pointer", marginBottom: "-2px" }} />
+                            </Box>
+                        </Box>
+                        <Typography sx={{
+                            color: "text.primary", fontWeight: "600", fontSize: "0.8rem", letterSpacing: "0.1rem", marginTop: "0.5rem", fontFamily: "inherit"
+                        }}>
+                            Certificate of achievement for the Advance Java Full Stack Development course, where I upgraded my programming skills.
+                        </Typography>
+                    </Box>
+                </Stack>
+
+                <Typography sx={{
+                    color: theme.palette.text.primary, fontWeight: "600", fontSize: "1.5rem", letterSpacing: "0.1rem", wordSpacing: "0.25rem", marginTop: "3rem", fontFamily: "inherit"
+                }}>
+                    Education
+                </Typography>
+
+                <Stack sx={{ px: { xs: 2, md: 0 }, marginTop: "1rem" }}>
                     <Typography sx={{
-                        color: "text.primary", fontWeight: "600", fontSize: "0.8rem", letterSpacing: "0.1rem", marginTop: "1rem", fontFamily: "inherit"
+                        color: theme.palette.text.primary, fontWeight: "600", fontSize: "1.2rem", letterSpacing: "0.1rem", fontFamily: "inherit"
                     }}>
-                        Certificate of achievement for the Advance Java Full Stack Development course, where I upgraded my programming skills.
+                        Bachelor of Engineering in Electrical Electronics and Power Engineering
+                    </Typography>
+                    <Typography sx={{
+                        color: theme.palette.text.primary, fontWeight: "500", fontSize: "1rem", letterSpacing: "0.1rem", marginTop: "0.25rem", fontFamily: "inherit"
+                    }}>
+                        Priyadarshini College of Engineering, Nagpur, India
+                    </Typography>
+                    <Typography sx={{
+                        color: theme.palette.text.primary, fontWeight: "500", fontSize: "0.9rem", letterSpacing: "0.1rem", marginTop: "0.25rem", fontFamily: "inherit"
+                    }}>
+                        07/2018 – 07/2022 | CGPA: 8.73/10
                     </Typography>
                 </Stack>
             </Container>

@@ -3,6 +3,7 @@ import MML from "../assets/MakeMyLabs.png";
 import Portfolio from "../assets/Portfolio.png";
 import Techademy from "../assets/TechademyCampus.png";
 import VelocitySector from "../assets/VelocitySector.png";
+import AIInterview from "../assets/AIInterviewSimulator.png";
 import { getExperience } from "../Utils/timeUtils";
 
 export const navLinkData = [
@@ -121,6 +122,47 @@ export const projectData = [
     ],
     demo: "https://mern-project-frontend-l3zc.onrender.com/",
     github: "https://github.com/kmanish9301/MERN_PROJECT",
+  },
+  {
+    name: "AI Interview Simulator",
+    description: [
+      {
+        id: 1,
+        text: "Architected and deployed an AI-powered MERN platform for technical interview simulation with real-time evaluation and AI-driven feedback generation.",
+      },
+      {
+        id: 2,
+        text: "Integrated Groq Llama 3.1 API to dynamically generate technical interview questions and automated answer analysis, reducing manual evaluation effort by ~80%.",
+      },
+      {
+        id: 3,
+        text: "Implemented secure JWT Authentication and protected routing mechanisms for secure session management and API access.",
+      },
+      {
+        id: 4,
+        text: "Containerized frontend and backend applications using Docker multi-stage builds and deployed on AWS EC2 with Nginx reverse proxy configuration.",
+      },
+      {
+        id: 5,
+        text: "Engineered automated CI/CD pipelines using GitHub Actions and self-hosted EC2 runners, reducing deployment time by ~70%.",
+      },
+    ],
+    image: AIInterview,
+    tech: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Docker",
+      "AWS EC2",
+      "Nginx",
+      "GitHub Actions",
+      "Groq API",
+      "JWT",
+    ],
+    demo: "http://35.175.203.5",
+    github: "https://github.com/kmanish9301/ai-interview-simulator",
   },
   {
     name: "Personal Portfolio",
